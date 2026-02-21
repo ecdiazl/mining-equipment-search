@@ -1,0 +1,48 @@
+# Entorno
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Datos
+data/raw/
+data/processed/
+data/embeddings/
+data/reports/
+*.db
+
+# Logs
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Security - keys and secrets
+*.key
+*.pem
+*.p12
+*.secret
+.env.*
+!.env.example
+secrets/
+
+# Build / dist
+*.egg-info/
+dist/
+build/
+
+# Coverage
+.coverage
+htmlcov/

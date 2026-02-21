@@ -1,0 +1,275 @@
+# =============================================================================
+# MARCAS Y EQUIPOS MINEROS - CARGUIO Y TRANSPORTE
+# Excluye: Caterpillar (CAT)
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# FABRICANTES TIER 1 - Marcas globales principales
+# ---------------------------------------------------------------------------
+tier_1:
+  komatsu:
+    nombre_completo: "Komatsu Ltd."
+    pais: "Japon"
+    sitio_web: "https://www.komatsu.com"
+    equipos:
+      carguio:
+        - tipo: "Pala Hidraulica"
+          series: ["PC3000", "PC4000", "PC5500", "PC7000", "PC8000"]
+          rango_peso_ton: [250, 800]
+        - tipo: "Cargador Frontal"
+          series: ["WA800", "WA900", "WA1200"]
+          rango_peso_ton: [75, 220]
+      transporte:
+        - tipo: "Camion Minero Rigido"
+          series: ["HD605", "HD785", "HD1500", "830E", "860E", "880E", "930E", "960E", "980E"]
+          rango_capacidad_ton: [63, 360]
+
+  hitachi:
+    nombre_completo: "Hitachi Construction Machinery Co., Ltd."
+    pais: "Japon"
+    sitio_web: "https://www.hitachicm.com"
+    equipos:
+      carguio:
+        - tipo: "Pala Hidraulica"
+          series: ["EX1200", "EX1900", "EX2500", "EX2600", "EX3600", "EX5500", "EX5600", "EX8000"]
+          rango_peso_ton: [120, 800]
+        - tipo: "Cargador Frontal"
+          series: ["ZW550", "ZW310"]
+          rango_peso_ton: [30, 55]
+      transporte:
+        - tipo: "Camion Minero Rigido"
+          series: ["EH1100", "EH1700", "EH3500", "EH4000", "EH5000"]
+          rango_capacidad_ton: [65, 296]
+
+  liebherr:
+    nombre_completo: "Liebherr Group - Mining Division"
+    pais: "Suiza"
+    sitio_web: "https://www.liebherr.com/en/mining"
+    equipos:
+      carguio:
+        - tipo: "Pala Hidraulica"
+          series: ["R 9100", "R 9150", "R 9200", "R 9250", "R 9350", "R 9400", "R 9600", "R 9800"]
+          rango_peso_ton: [100, 800]
+        - tipo: "Cargador Frontal"
+          series: ["L 566", "L 580", "L 586"]
+          rango_peso_ton: [30, 55]
+      transporte:
+        - tipo: "Camion Minero Rigido"
+          series: ["T 236", "T 264", "T 274", "T 284"]
+          rango_capacidad_ton: [100, 363]
+
+  volvo_ce:
+    nombre_completo: "Volvo Construction Equipment"
+    pais: "Suecia"
+    sitio_web: "https://www.volvoce.com"
+    equipos:
+      carguio:
+        - tipo: "Cargador Frontal"
+          series: ["L260H", "L350H", "L350F"]
+          rango_peso_ton: [35, 55]
+        - tipo: "Excavadora Hidraulica"
+          series: ["EC750E", "EC950F"]
+          rango_peso_ton: [75, 95]
+      transporte:
+        - tipo: "Camion Articulado"
+          series: ["A30G", "A35G", "A40G", "A45G", "A60H", "R60", "R70", "R100E"]
+          rango_capacidad_ton: [28, 95]
+
+# ---------------------------------------------------------------------------
+# FABRICANTES TIER 2 - Marcas especializadas / regionales
+# ---------------------------------------------------------------------------
+tier_2:
+  belaz:
+    nombre_completo: "BELAZ - Belarusian Automobile Plant"
+    pais: "Bielorrusia"
+    sitio_web: "https://belaz.by"
+    equipos:
+      transporte:
+        - tipo: "Camion Minero Rigido"
+          series: ["BELAZ-7513", "BELAZ-7517", "BELAZ-7530", "BELAZ-7555", "BELAZ-7560", "BELAZ-75131", "BELAZ-75180", "BELAZ-75306", "BELAZ-75310", "BELAZ-75600", "BELAZ-75710"]
+          rango_capacidad_ton: [90, 450]
+          nota: "BELAZ-75710 es el camion minero mas grande del mundo (450 ton)"
+
+  doosan_infracore:
+    nombre_completo: "HD Hyundai Infracore (ex Doosan Infracore)"
+    pais: "Corea del Sur"
+    sitio_web: "https://www.hd-infracore.com"
+    equipos:
+      carguio:
+        - tipo: "Excavadora Hidraulica"
+          series: ["DX800LC", "DX530LC", "DX490LC"]
+          rango_peso_ton: [49, 80]
+
+# ---------------------------------------------------------------------------
+# FABRICANTES CHINOS - Marcas mas relevantes en mineria
+# ---------------------------------------------------------------------------
+chinese_brands:
+  xcmg:
+    nombre_completo: "XCMG - Xuzhou Construction Machinery Group"
+    pais: "China"
+    sitio_web: "https://www.xcmg.com"
+    ranking_global: "Top 3 fabricantes de maquinaria de construccion en China"
+    equipos:
+      carguio:
+        - tipo: "Excavadora Hidraulica Minera"
+          series: ["XE700D", "XE750D", "XE900D", "XE1300C", "XE2800E", "XE4000", "XE7000"]
+          rango_peso_ton: [70, 700]
+        - tipo: "Cargador Frontal"
+          series: ["LW1200KN", "LW900KN", "LW800KN", "LW600KN"]
+          rango_peso_ton: [60, 120]
+      transporte:
+        - tipo: "Camion Minero Rigido"
+          series: ["XDE110", "XDE130", "XDE200", "XDE240", "XDE300", "XDE360", "XDE400"]
+          rango_capacidad_ton: [95, 400]
+
+  sany:
+    nombre_completo: "SANY Heavy Industry Co., Ltd."
+    pais: "China"
+    sitio_web: "https://www.sanyglobal.com"
+    ranking_global: "Fabricante #1 de excavadoras en China, Top 5 mundial"
+    equipos:
+      carguio:
+        - tipo: "Excavadora Hidraulica Minera"
+          series: ["SY750H", "SY870H", "SY980H", "SY1250H", "SY1600H"]
+          rango_peso_ton: [75, 160]
+        - tipo: "Cargador Frontal"
+          series: ["SW955K", "SW966K"]
+          rango_peso_ton: [30, 50]
+      transporte:
+        - tipo: "Camion Minero Rigido"
+          series: ["SKT90S", "SKT105", "SKT125", "SKT200"]
+          rango_capacidad_ton: [60, 200]
+
+  zoomlion:
+    nombre_completo: "Zoomlion Heavy Industry Science & Technology"
+    pais: "China"
+    sitio_web: "https://www.zoomlion.com"
+    ranking_global: "Top 5 fabricantes de maquinaria de construccion en China"
+    equipos:
+      carguio:
+        - tipo: "Excavadora Hidraulica"
+          series: ["ZE700G", "ZE950G"]
+          rango_peso_ton: [70, 95]
+        - tipo: "Cargador Frontal"
+          series: ["ZL80A"]
+          rango_peso_ton: [80, 80]
+      transporte:
+        - tipo: "Camion Minero"
+          series: ["ZT105", "ZT118", "ZT135"]
+          rango_capacidad_ton: [65, 135]
+
+  liugong:
+    nombre_completo: "LiuGong Machinery Co., Ltd."
+    pais: "China"
+    sitio_web: "https://www.liugong.com"
+    equipos:
+      carguio:
+        - tipo: "Excavadora Hidraulica"
+          series: ["970E", "990F"]
+          rango_peso_ton: [70, 90]
+        - tipo: "Cargador Frontal"
+          series: ["899", "8128H"]
+          rango_peso_ton: [50, 120]
+
+  shantui:
+    nombre_completo: "Shantui Construction Machinery Co., Ltd."
+    pais: "China"
+    sitio_web: "https://www.shantui.com"
+    equipos:
+      carguio:
+        - tipo: "Cargador Frontal"
+          series: ["SL80W", "SL60W"]
+          rango_peso_ton: [40, 80]
+
+# ---------------------------------------------------------------------------
+# CATEGORIAS DE INFORMACION TECNICA A BUSCAR
+# ---------------------------------------------------------------------------
+technical_info_categories:
+  specs_generales:
+    - peso_operativo_ton
+    - dimensiones_generales
+    - capacidad_balde_m3
+    - capacidad_carga_ton
+    - velocidad_maxima_kmh
+    - radio_giro_m
+    - altura_descarga_m
+
+  motor:
+    - fabricante_motor
+    - modelo_motor
+    - potencia_hp
+    - potencia_kw
+    - torque_nm
+    - cilindrada_l
+    - norma_emisiones
+    - tipo_combustible
+    - consumo_combustible_lh
+
+  sistema_hidraulico:
+    - presion_maxima_bar
+    - caudal_total_lmin
+    - tipo_bombas
+    - fuerza_excavacion_kn
+    - fuerza_arranque_kn
+
+  transmision:
+    - tipo_transmision
+    - numero_marchas
+    - velocidad_maxima_carga
+    - tipo_diferencial
+    - relacion_transmision
+
+  sistema_electrico:
+    - voltaje_sistema
+    - tipo_arranque
+    - sistema_propulsion  # para camiones electricos
+
+  rendimiento:
+    - productividad_tonh
+    - ciclo_carga_seg
+    - factor_llenado
+    - disponibilidad_mecanica_pct
+
+  seguridad:
+    - sistema_frenado
+    - cabina_rops_fops
+    - sistema_antivolcamiento
+    - camaras_monitoreo
+    - sistema_proximidad
+
+  costos_operacion:
+    - costo_hora_usd
+    - vida_util_horas
+    - intervalo_mantenimiento_horas
+    - costo_neumaticos
+    - costo_get  # Ground Engaging Tools
+
+# ---------------------------------------------------------------------------
+# FUENTES DE BUSQUEDA PRIORITARIAS
+# ---------------------------------------------------------------------------
+search_sources:
+  primary:
+    - "sitios oficiales del fabricante"
+    - "lectura.online (manuales tecnicos)"
+    - "mining-technology.com"
+    - "international-mining.com"
+    - "e-mj.com (Engineering & Mining Journal)"
+    - "miningmagazine.com"
+
+  secondary:
+    - "ritchiespecs.com"
+    - "specmachines.com"
+    - "mascus.com"
+    - "lectura-specs.com"
+    - "forconstructionpros.com"
+
+  technical_papers:
+    - "scholar.google.com"
+    - "researchgate.net"
+    - "IEEE Xplore"
+    - "OneMine.org"
+
+  market_reports:
+    - "grandviewresearch.com"
+    - "mordorintelligence.com"
+    - "alliedmarketresearch.com"

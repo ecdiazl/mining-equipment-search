@@ -1,0 +1,66 @@
+# =============================================================================
+# CONFIGURACION GENERAL DEL PROYECTO
+# =============================================================================
+
+project:
+  name: "Mining Equipment Technical Search"
+  version: "1.0.0"
+  description: "Deep search de informacion tecnica de equipos mineros (carguio y transporte)"
+
+# Configuracion de scraping
+scraping:
+  max_concurrent_requests: 5
+  request_delay_seconds: 2
+  timeout_seconds: 30
+  max_retries: 3
+  user_agent: "MiningEquipResearch/1.0 (Academic Research)"
+  respect_robots_txt: true
+
+# Configuracion de busqueda
+search:
+  # APIs de busqueda (configurar en .env)
+  engines:
+    - name: "google_custom_search"
+      enabled: true
+      max_results_per_query: 20
+    - name: "bing_search"
+      enabled: false
+      max_results_per_query: 20
+    - name: "serper_api"
+      enabled: true
+      max_results_per_query: 30
+
+  # Idiomas de busqueda
+  languages: ["en", "es", "zh"]
+
+  # Patrones de consulta para deep search
+  query_templates:
+    - "{brand} {model} technical specifications mining"
+    - "{brand} {model} specs datasheet PDF"
+    - "{brand} {model} ficha tecnica mineria"
+    - "{brand} {model} brochure mining equipment"
+    - "{brand} {model} performance data mining"
+    - "{brand} {model} operating weight horsepower capacity"
+    - "{brand} {model} maintenance manual specifications"
+    - "{brand} mining truck excavator loader specifications {year}"
+
+# Configuracion de procesamiento NLP
+nlp:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  chunk_size: 512
+  chunk_overlap: 50
+  similarity_threshold: 0.75
+
+# Configuracion de almacenamiento
+storage:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  embeddings_dir: "data/embeddings"
+  reports_dir: "data/reports"
+  database: "data/mining_equipment.db"
+
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/pipeline.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

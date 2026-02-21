@@ -1,0 +1,43 @@
+# =============================================================================
+# Dependencias del proyecto Mining Equipment Technical Search
+# =============================================================================
+
+# --- Web Scraping & Search ---
+requests>=2.31.0,<3.0
+beautifulsoup4>=4.12.0,<5.0
+httpx>=0.25.0,<1.0
+
+# --- Procesamiento de documentos ---
+pdfplumber>=0.10.0,<1.0
+openpyxl>=3.1.0,<4.0
+
+# --- NLP y ML ---
+sentence-transformers>=2.2.0,<4.0
+torch>=2.1.0,<3.0
+
+# --- Embeddings y Vector Store ---
+chromadb>=0.4.0,<1.0
+
+# --- Datos y analisis ---
+pandas>=2.1.0,<3.0
+numpy>=1.26.0,<3.0
+pyyaml>=6.0.1,<7.0
+python-dotenv>=1.0.0,<2.0
+
+# --- Base de datos ---
+sqlalchemy>=2.0.0,<3.0
+
+# --- Visualizacion y reportes ---
+plotly>=5.18.0,<6.0
+
+# --- Utilidades ---
+tqdm>=4.66.0,<5.0
+tenacity>=8.2.0,<10.0
+pydantic>=2.5.0,<3.0
+
+# --- Opcionales (instalar si se necesitan) ---
+# selenium>=4.15.0,<5.0       # Para scraping dinamico
+# playwright>=1.40.0,<2.0     # Para scraping con JS rendering
+# scrapy>=2.11.0,<3.0         # Framework de scraping alternativo
+# spacy>=3.7.0,<4.0           # NLP avanzado
+# faiss-cpu>=1.7.4,<2.0       # Vector store alternativo
